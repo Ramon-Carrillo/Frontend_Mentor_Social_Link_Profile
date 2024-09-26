@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+  --mb-24: 24px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  background-color: var(--off-black);
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: var(--dark-grey);
+  border-radius: 12px;
+  width: 304px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__image img {
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+  margin-bottom: var(--mb-24);
+}
+
+.profile__info {
+  text-align: center;
+  margin-bottom: var(--mb-24);
+}
+
+.profile__name {
+  font-size: 24px;
+  line-height: 21px;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 0;
+  vertical-align: top;
+  margin-bottom: 4px;
+}
+
+.profile__location {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--green);
+  letter-spacing: 0;
+  vertical-align: top;
+  margin-bottom: var(--mb-24);
+}
+
+.profile__comment {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--white);
+  letter-spacing: 0;
+  vertical-align: top;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links li {
+  background-color: var(--grey);
+  border-radius: 8px;
+  height: 45px;
+  width: 302px;
+}
+
+.social-links li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  height: 100%;
+  color: var(--white);
+}
+
+.social-links li:hover {
+  background-color: var(--green);
+}
+
+.social-links li:hover a {
+  color: var(--grey);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 327px;
+    padding: 24px;
+  }
+}
