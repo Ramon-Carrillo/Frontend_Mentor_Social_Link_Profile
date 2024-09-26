@@ -114,5 +114,6 @@ body {
   .container {
     width: 327px;
     padding: 24px;
+    margin: 0 24px;
   }
 }
